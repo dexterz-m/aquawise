@@ -1,13 +1,12 @@
 import React from 'react'
-import { ClerkProvider, SignedIn, SignedOut, RedirectToSignIn } from '@clerk/nextjs'
 import Link from 'next/link';
 
 const Header = () => {
   return (
     
-      <div className="navbar px-10 bg-base-500">
+      <div className="navbar px-10 bg-shuttle-gray-900">
         <div className="flex-1">
-          <a className="btn btn-ghost text-2xl">AquaWise</a>
+          <a className="btn btn-ghost text-2xl text-black-haze-100"><img alt="Logo" /></a>
         </div>
       
 
@@ -17,7 +16,8 @@ const Header = () => {
             <div className="w-10 rounded-full">
               <img
                 alt="Tailwind CSS Navbar component"
-                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                // src=''
+                />
             </div>
           </div>
           <ul
