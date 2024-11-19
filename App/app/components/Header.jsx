@@ -4,9 +4,9 @@ import Link from 'next/link';
 const Header = () => {
   return (
     
-      <div className="navbar px-10 bg-shuttle-gray-900">
+      <div className="navbar px-10 bg-tuna-900 p-5">
         <div className="flex-1">
-          <a className="btn btn-ghost text-2xl text-black-haze-100"><img alt="Logo" /></a>
+          <a className="btn btn-ghost text-2xl font-inter font-bold">AquaWise</a>
         </div>
       
 

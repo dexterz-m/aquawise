@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div>
+    <div className="text-black-haze-100">
       <Header/>
       <Hero/>
       <Footer/>

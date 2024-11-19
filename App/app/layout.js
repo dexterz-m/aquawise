@@ -1,4 +1,20 @@
 import "./globals.css";
+import { Inter } from 'next/font/google';
+import localFont from 'next/font/local'
+
+const inter = Inter({
+  weight: ['100', '300','500'],
+  style: ['normal'],
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+const candyBeans = localFont({
+  src: './fonts/Candy Beans.otf',
+  variable: '--candy-beans',
+  weight: '500'
+})
 
 export const metadata = {
   title: "AquaWise",
@@ -9,7 +25,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`antialiased`}>
+        className={`antialiased
+                    ${inter.variable} font-inter
+                    ${candyBeans.variable}`}>
         {children}
       </body>
     </html>
