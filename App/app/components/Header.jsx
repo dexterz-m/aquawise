@@ -6,7 +6,7 @@ const Header = () => {
     
       <div className="navbar px-10 bg-tuna-900 p-5">
         <div className="flex-1">
-          <a className="btn btn-ghost text-2xl font-inter font-bold">AquaWise</a>
+          <a className="btn btn-ghost text-2xl font-inter font-bold text-anakiwa-500">AquaWise</a>
         </div>
       
 
@@ -14,10 +14,7 @@ const Header = () => {
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img
-                alt="Tailwind CSS Navbar component"
-                // src=''
-                />
+              
             </div>
           </div>
           <ul

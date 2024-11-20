@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import localFont from 'next/font/local'
 
 const inter = Inter({
-  weight: ['100', '300','500'],
+  weight: ['100', '200', '300','500'],
   style: ['normal'],
   subsets: ['latin'],
   variable: '--font-inter',
