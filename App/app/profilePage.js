@@ -5,6 +5,9 @@ export default function profilePage() {
   return (
     <div>
       <Header/>
+      <div className="flex w-full flex-col bg-tuna-900 ">
+        <div className="divider mt-0 mb-0"></div>
+      </div>
       <Footer/>
     </div>
   );
