@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Hero = () => {
@@ -10,22 +11,23 @@ const Hero = () => {
           <p className="mb-5 text-3xl text-black-haze-100 font-extralight">
             Monitor your hydration throughout the day and reach your health goals with our easy-to-use water intake tracker.
           </p>
-          <button className="btn btn text-xl text-black-haze-100 mt-10 bg-anakiwa-500 font-medium hover:bg-anakiwa-700">Start Today!</button>
+          <Link href={"/profile"} className="btn text-xl text-black-haze-100 mt-10 bg-anakiwa-600 font-medium hover:bg-anakiwa-700 shadow-xl">Start Today!</Link>
         </div>
       </div>
 
-      <div className="join flex join-horizontal mt-32 space-x-10">
-        <div className="card w-56 bg-shuttle-gray-700">
+      <div className="join flex justify-center join-horizontal mt-20 space-x-10">
+
+        <div className="card w-56 bg-shuttle-gray-700 shadow-xl">
           <div className="card-body">
-            <h2 className="card-title text-anakiwa-500">Tracker</h2>
+            <Link href={"/tracker"}><h2 className="card-title text-anakiwa-500 hover:text-anakiwa-600">Water Tracker</h2></Link>
             <p>Track your water intake whenever you want</p>
           </div>
         </div>
 
-        <div className="card w-56 bg-shuttle-gray-700">
+        <div className="card w-56 bg-shuttle-gray-700 shadow-xl">
           <div className="card-body">
-            <h2 className="card-title text-anakiwa-500">Leaderboard</h2>
-            <p>Compete with others</p>
+            <Link href={"/leaderboard"}><h2 className="card-title text-anakiwa-500 hover:text-anakiwa-600">Leaderboard</h2></Link>
+            <p>Compete with your friend and other users</p>
           </div>
         </div>
 

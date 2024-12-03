@@ -1,6 +1,6 @@
-import Footer from "./components/Footer";
-import PreHeader from "./components/PreHeader";
-import Hero from "./components/Hero";
+import Footer from "../components/Footer";
+import PreHeader from "../components/PreHeader";
+import Hero from "../components/Hero";
 
 export default function Home() {
   return (
