@@ -17,14 +17,14 @@ const Hero = () => {
 
       <div className="join flex justify-center join-horizontal mt-20 space-x-10">
 
-        <div className="card w-56 bg-shuttle-gray-700 shadow-xl">
+        <div className="card w-56 bg-shuttle-gray-800 shadow-xl">
           <div className="card-body">
             <Link href={"/tracker"}><h2 className="card-title text-anakiwa-500 hover:text-anakiwa-600">Water Tracker</h2></Link>
             <p>Track your water intake whenever you want</p>
           </div>
         </div>
 
-        <div className="card w-56 bg-shuttle-gray-700 shadow-xl">
+        <div className="card w-56 bg-shuttle-gray-800 shadow-xl">
           <div className="card-body">
             <Link href={"/leaderboard"}><h2 className="card-title text-anakiwa-500 hover:text-anakiwa-600">Leaderboard</h2></Link>
             <p>Compete with your friend and other users</p>

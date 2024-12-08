@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className="text-black-haze-100">
       <Header/>
-      <div className="flex w-full flex-col bg-tuna-900 ">
-        <div className="divider mt-0 mb-0"></div>
+      <div class="flex w-full flex-col bg-tuna-900">
+        <div class="divider"></div>
       </div>
       <Hero/>
       <Footer/>
