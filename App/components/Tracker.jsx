@@ -3,12 +3,12 @@ import React, { useState } from 'react'
 
 const Tracker = () => {
   
-  let [dailyConsumption, setDailyConsumption] = useState(2000)
+  let [dailyConsumption, setDailyConsumption] = useState(500)
   let [allConsumption, setAllConsumption] = useState(500/1000)
 
   const [volume, setVolume] = useState(0)
 
-  let [target, setTarget] = useState(3000)
+  let [target, setTarget] = useState(2000)
 
   const valueOptions = []
 
