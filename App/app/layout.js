@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from 'next/font/google';
 import localFont from 'next/font/local'
+import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 
 const inter = Inter({
   weight: ['100', '200', '300','500'],
@@ -23,13 +24,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`antialiased
-                    ${inter.variable} font-inter
-                    ${candyBeans.variable}`}>
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body
+          className={`antialiased
+                      ${inter.variable} font-inter
+                      ${candyBeans.variable}`}>
+
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

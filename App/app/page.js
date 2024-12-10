@@ -1,16 +1,21 @@
+import Divider from "@/components/Divider";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import { ClerkProvider, RedirectToSignIn, SignedIn, SignedOut } from '@clerk/nextjs'
 
 export default function Home() {
   return (
     <div className="text-black-haze-100">
-      <Header/>
-      <div class="flex w-full flex-col bg-tuna-900">
-        <div class="divider"></div>
-      </div>
-      <Hero/>
-      <Footer/>
+      <ClerkProvider>
+        
+        <Header/>
+        <Divider/>
+
+        <Hero/>
+        <Footer/>
+
+      </ClerkProvider>
     </div>
   );
 }

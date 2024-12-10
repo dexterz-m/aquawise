@@ -1,18 +1,30 @@
 import Tracker from "@/components/Tracker";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import Divider from "@/components/Divider";
+import { ClerkProvider, RedirectToSignIn, SignedIn, SignedOut } from '@clerk/nextjs'
 
 export default function waterTracker() {
   return (
     <div>
-      <Header/>
-      <div className="flex w-full flex-col bg-tuna-900">
-        <div className="divider mt-0 mb-0"></div>
-      </div>
+      <ClerkProvider>
 
-      <Tracker/>
+        <SignedIn>
+          <Header/>
+          <Divider/>
 
-      <Footer/>
+          <Tracker/>
+
+          <Footer/>
+        </SignedIn>
+
+        <SignedOut>
+
+          <RedirectToSignIn />
+          
+        </SignedOut>
+
+      </ClerkProvider>
     </div>
   );
 }

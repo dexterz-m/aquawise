@@ -1,14 +1,29 @@
+import Divider from "@/components/Divider";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import Leaderboard from "@/components/Leaderboard";
+import { ClerkProvider, RedirectToSignIn, SignedIn, SignedOut } from '@clerk/nextjs'
 
 export default function leaderBoard() {
   return (
     <div>
-      <Header/>
-      <div className="flex w-full flex-col bg-tuna-900 ">
-        <div className="divider mt-0 mb-0"></div>
-      </div>
-      <Footer/>
+      <ClerkProvider>
+      <SignedIn>
+
+        <Header/>
+        <Divider/>
+        
+        <Leaderboard/>
+
+        <Footer/>
+
+      </SignedIn>
+
+      <SignedOut>
+        <RedirectToSignIn />
+      </SignedOut>
+
+      </ClerkProvider>
     </div>
   );
 }
