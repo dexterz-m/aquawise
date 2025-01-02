@@ -44,9 +44,9 @@ const Tracker = () => {
               <p className='text-black-haze-100'>ml</p>
               <select value={volume} onChange={(e) => setVolume(e.target.value)} className="select select-bordered w-50 max-w-xs mx-5">
                 <option value={0}>Presets</option>
+                <option value={200}>Plastic Cup ( 200 ml )</option>
                 <option value={240}>Glass of water ( 240 ml )</option>
                 <option value={500}>Water Bottle ( 500 ml )</option>
-                <option value={200}>Plastic Cup ( 200 ml )</option>
                 <option value={750}>Sports Bottle ( 750 ml )</option>
               </select>
             </div>

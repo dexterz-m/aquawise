@@ -13,7 +13,7 @@ const Header = () => {
         </div>
 
         <SignedOut>
-          <SignInButton className="btn btn-sm max-h-20 text-sm text-black-haze-100 bg-anakiwa-600 hover:bg-anakiwa-700 border-transparent focus:border-transparent focus:ring-0 hover:border-transparent hover:ring-0" />
+          <SignInButton className="btn btn-sm text-sm text-black-haze-100 bg-anakiwa-600 hover:bg-anakiwa-700 border-transparent focus:border-transparent focus:ring-0 hover:border-transparent hover:ring-0" />
         </SignedOut>
         
         <SignedIn>

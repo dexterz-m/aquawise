@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="text-black-haze-100">
       <ClerkProvider>
-        
+
         <Header/>
         <Divider/>
 

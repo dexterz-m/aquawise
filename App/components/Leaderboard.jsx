@@ -2,19 +2,19 @@ import React from 'react'
 
 const Leaderboard = () => {
   return (
-    <div className='bg-tuna-900 p-5 h-screen flex flex-col items-center'>
-        <div className='mb-10'>
+    <div className='bg-tuna-900 text-black-haze-100 p-5 h-screen flex flex-col items-center'>
+        <div className='mb-20'>
             <p className='text-3xl font-bold'>Leaderboard</p>
         </div>
 
-        <div className="card w-2/3 max-w-xl bg-shuttle-gray-800 shadow-xl">
+        <div className="card w-2/3 mb-44 h-screen max-w-xl bg-shuttle-gray-800 shadow-xl">
           <div className="card-body">
 
             <div className="overflow-x-auto">
               <table className="table text-center">
                 {/* head */}
                 <thead>
-                  <tr className='text-anakiwa-500'>
+                  <tr className='text-anakiwa-500 text-md'>
                     <th>Nr.</th>
                     <th>User</th>
                     <th>Drinked Water (L)</th>
